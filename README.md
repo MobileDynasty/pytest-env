@@ -24,3 +24,12 @@ separated list of `KEY=VALUE` entries.  The defined variables will be added to t
     env = 
         HOME=~/tmp
         RUN_ENV=test
+
+You can use `D:` (default) as prefix if you don't want to override existing environment variables:
+
+
+    [pytest]
+    env = 
+        D:HOME=~/tmp
+        D:RUN_ENV=test
+
