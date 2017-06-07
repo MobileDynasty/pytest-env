@@ -1,5 +1,7 @@
 import os
 
+import pytest
+
 
 def pytest_addoption(parser):
     parser.addini("env",
@@ -8,6 +10,7 @@ def pytest_addoption(parser):
                   default=[])
 
 
+@pytest.hookimpl(tryfirst=True)
 def pytest_load_initial_conftests(args, early_config, parser):
     for e in early_config.getini("env"):
         part = e.partition("=")
