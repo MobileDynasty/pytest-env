@@ -1,4 +1,3 @@
-
 """Adopt environment section in pytest configuration files."""
 
 import os
