@@ -1,12 +1,14 @@
+"""pytest-env setup module."""
+
 from setuptools import setup
 
-description = 'py.test plugin that allows you to add environment variables.'
+DESCRIPTION = 'py.test plugin that allows you to add environment variables.'
 
 setup(
     name='pytest-env',
-    description=description,
-    long_description=description,
-    version='0.6.1',
+    description=DESCRIPTION,
+    long_description=DESCRIPTION,
+    version='0.6.2',
     author='dev@mobile-dynasty.com',
     author_email='dev@mobile-dynasty.com',
     url='https://github.com/MobileDynasty/pytest-env',
